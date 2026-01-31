@@ -7,7 +7,6 @@ import './App.css'
 function App() {
   return (
     <>
-      <h1>Hi Hamza!</h1>
     <Navbar></Navbar>
     </>
   )
