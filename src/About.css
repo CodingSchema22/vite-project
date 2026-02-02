@@ -1,0 +1,32 @@
+
+#About-text,#img-part{
+  background-color: #fff;
+} 
+#div1 {
+    flex-direction: row-reverse;
+  background-color: #fff;
+}
+.info{
+    display: flex;
+    gap: 50px;
+}
+.box1:hover{
+    cursor: pointer;
+    background-color: palevioletred;
+    color: #fff;
+}
+.box1{
+  background-color: rgb(246, 233, 219);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+    /* border: 2px solid black; */
+}
+@media (max-width: 768px) {
+  .info{
+    gap: 30px;
+  }
+}

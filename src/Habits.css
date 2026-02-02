@@ -1,0 +1,66 @@
+
+#Habits {
+    display: flex;
+  background-color: rgb(246, 233, 219);
+    padding: 4rem 3rem;
+    padding-top: 2rem;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* wrapper */
+.tips {
+    display: flex;
+    flex-wrap: wrap; /* IMPORTANT */
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* card */
+.card {
+    padding: 1.8rem;
+    min-height: 140px;
+    max-width: 220px;
+    width: 100%;
+    line-height: 1.6;
+    border-radius: 10px 60px 10px 60px;
+    transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* text */
+.card h4 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* hover */
+.card:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+    color: #fff;
+}
+
+/* 📱 TABLET */
+@media (max-width: 768px) {
+    .card {
+        max-width: 45%;
+    }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+        text-align: center;
+    }
+}

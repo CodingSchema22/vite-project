@@ -1,0 +1,124 @@
+ .levels {
+    display: flex;
+    flex-direction: column;   
+    gap: 6px;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+#div2{
+    padding-top: 1rem;
+}
+/* /* bar container  */
+.lel1 {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 6px 10px; */
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+/* /* progress values  */
+#b1 {
+    background-color: rgb(241, 207, 178);
+    width: 80%;
+}
+
+#b2 {
+    background-color: rgb(240, 135, 43);
+    width: 70%;
+}
+
+#b3 {
+    background-color: rgb(200, 11, 124);
+    width: 60%;
+}
+
+/* /* 📱 TABLET  */
+@media (max-width: 768px) {
+    .lel1 {
+        max-width: 100%;
+    }
+}
+
+/* /* 📱 MOBILE  */
+@media (max-width: 480px) {
+    .lel1 {
+        padding: 6px;
+    }
+
+    #b1,
+    #b2,
+    #b3 {
+        height: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.level-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.level-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Bar background */
+.level-bar-bg {
+  width: 100%;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Animated fill */
+.level-bar-fill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 25px;
+  padding-right: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}

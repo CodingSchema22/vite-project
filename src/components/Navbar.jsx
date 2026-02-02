@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
+
+
 import { useState } from "react";
-import "./Navbar.css"; // Optional: create styles for navbar
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +11,14 @@ function Navbar() {
   };
 
   return (
+    <motion.nav
+  initial={{ y: -100 }}
+  animate={{ y: 0 }}
+  transition={{ duration: 0.6 }}
+>
+
+<section className="Navbar">
+  <div className="main">
     <nav className="navbar">
       <div className="navbar-container">
         <h1 className="logo">MySite</h1>
@@ -20,13 +30,17 @@ function Navbar() {
 
         {/* Links */}
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Habits">Habits</a></li>
+          <li><a href="#Expertise">Experstise</a></li>
+          <li><a href="#Contact">Contact-us</a></li>
         </ul>
       </div>
     </nav>
+    </div>
+    </section>
+    </motion.nav>
   );
 }
 
