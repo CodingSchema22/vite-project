@@ -1,0 +1,42 @@
+
+.info{
+    display: flex;
+    gap: 50px;
+}
+.box1:hover{
+    cursor: pointer;
+    background-color: palevioletred;
+    color: #fff;
+}
+.box1{
+  background-color: rgb(246, 233, 219);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+display: flex;
+    line-height: 1.5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+height: 50px;
+width: 70px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .info{
+    gap: 30px;
+  }
+}
+/* .about-content,  */
+.info{
+height: 400px;
+width: 300px;
+}
+/* .about-content{
+  line-height: 2;
+  width: 400px;
+}
+.about-content p{
+  margin-top: 30px;
+    padding: 10px;
+} */
